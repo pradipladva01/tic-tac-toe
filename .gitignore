@@ -1,0 +1,7 @@
+# Node/Bun dependencies
+node_modules/
+.bun/
+
+# Environment-specific files
+.env
+bun.lockb
