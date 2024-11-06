@@ -80,7 +80,7 @@ const TicTacToe = () => {
                 />
               )}
             </div>
-          ))}
+          ))} 
         </div>
         <button className="reset" onClick={reset}>
           Reset
