@@ -14,7 +14,7 @@ const TicTacToe = () => {
     if (lock || data[index] !== "") return;
 
     const newData = [...data];
-    newData[index] = count % 2 === 0 ? "X" : "O";
+    newData[index] = count % 2 === 0 ? "O" : "X";
     setData(newData);
     setCount(count + 1);
 
@@ -46,8 +46,8 @@ const TicTacToe = () => {
   const wonGame = (winner) => {
     setLock(true);
     titleRef.current.innerHTML = `Congratulations: <img src="${
-      winner === "X" ? crossIcon : circleIcon
-    }" alt="${winner === "X" ? "cross" : "circle"}" /> Wins`;
+      winner === "O" ? circleIcon : crossIcon
+    }" alt="${winner === "O" ? "cross" : "circle"}" /> Wins`;
   };
 
   const reset = () => {
@@ -80,7 +80,7 @@ const TicTacToe = () => {
                 />
               )}
             </div>
-          ))} 
+          ))}
         </div>
         <button className="reset" onClick={reset}>
           Reset
