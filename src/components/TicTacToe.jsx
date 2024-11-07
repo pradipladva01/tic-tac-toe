@@ -17,7 +17,7 @@ const TicTacToe = () => {
     newData[index] = count % 2 === 0 ? "O" : "X";
     setData(newData);
     setCount(count + 1);
-
+ 
     checkWin(newData);
   };
 
